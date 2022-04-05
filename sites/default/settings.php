@@ -681,9 +681,9 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  *
  * For example:
  * @code
- * $settings['trusted_host_patterns'] = [
- *   '^www\.example\.com$',
- * ];
+  $settings['trusted_host_patterns'] = [
+    '^www\.example222\.com$',
+  ];
  * @endcode
  * will allow the site to only run from www.example.com.
  *
@@ -766,9 +766,9 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+}
 $databases['default']['default'] = array (
   'database' => 'PNUMA-V4',
   'username' => 'postgres',
