@@ -46,15 +46,24 @@
  */
 #}
 
-<div> 
-  {{ page.header }}
-</div>
+{% if page.header %}
+<header class="mainHeader">
+  <nav> 
+    {{ page.header }}
+  </nav>
+</header>
+{% endif %}
 
-<div> 
 
-</div>
+{# {% if page.content %}
+  <div> 
+    {{ page.content }}
+  </div>
+{% endif %} #}
 
-<div> 
-  {{ page.footer }}
-</div>
 
+{% if page.footer %}
+  <div> 
+    {{ page.footer }}
+  </div>
+{% endif %}

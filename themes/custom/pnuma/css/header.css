@@ -1,0 +1,59 @@
+.mainHeader{
+    width: 100%;
+    height: 70px;
+    border-bottom: 3px solid #03AAF1;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .mainHeader nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+        /* LOGO */
+        .mainHeader nav .contentHeader #block-pnuma-branding{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .mainHeader nav #block-pnuma-branding .logoIMG{
+                border-right: 1px solid #DBDBDB;
+                min-height: 90% !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-right: 20px;
+                margin-left: 30px;
+            }
+
+        /* LINKS */
+        .mainHeader nav .contentLinks ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+        }
+            .mainHeader nav .contentLinks ul li{
+                list-style:none;
+                margin-left: 90px;
+            }
+                .mainHeader nav .contentLinks ul li a{
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: var(--font-color-bold)
+                }
+                .mainHeader nav .contentLinks ul li a.is-active{
+                    color: var(--font-color-active)
+                }
+
+        /* ACA VAN LOS CAMBIOS DE IDIOMA */
+        .mainHeader nav .fixEsEn{
+            width: 5%;
+            height: 100%;
+        }

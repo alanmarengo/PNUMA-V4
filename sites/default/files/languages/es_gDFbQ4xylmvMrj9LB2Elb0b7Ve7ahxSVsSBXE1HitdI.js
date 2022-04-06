@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Home":"Inicio","Next":"Siguiente","closed":"cerrado","Cancel":"Cancelar","Edit":"Editar","Link":"Enlace","Image":"Imagen","Open":"Abierta","Continue":"Continuar","Close":"Cerrar"}},"pluralFormula":{"1":0,"default":1}};
