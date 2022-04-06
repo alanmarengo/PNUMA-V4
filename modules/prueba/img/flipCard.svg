@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 30000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003"
+ aria-hidden="true"
+ focusable="false"
+ data-prefix="fas"
+ data-icon="level-down-alt"
+ role="img">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str1 {stroke:white;stroke-width:4000;stroke-miterlimit:22.9256}
+    .str0 {stroke:white;stroke-width:20;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="level-down-alt-solid.svg">
+   <path class="fil0 str0" d="M17018.24 20154.24l4503.34 -4494.17c410.68,-410.01 411.28,-1109.9 0,-1520.48l-4503.34 -4494.55c-615.17,-614.08 -1621.6,-145.93 -1621.6,760.24l0 2765.47 -10936.39 0 0 -3630.06c0.01,0.03 0.01,-0.03 0.01,-0.03 0,-137.5 -50.88,-269.57 -141.33,-366.74l-2251.61 -2420.73c-303.93,-326.81 -823.65,-95.37 -823.65,366.78l0 8471.51c0,572.97 432.02,1037.45 964.97,1037.45l13188 0 0 2765.07c0,902.5 1003.94,1376.84 1621.6,760.24z"/>
+  </g>
+  <polyline class="fil1 str1" points="6777.29,6861.3 6777.29,2600.53 25401.95,2600.53 25401.95,27100.53 6777.29,27100.53 6777.29,23137.53 "/>
+ </g>
+</svg>

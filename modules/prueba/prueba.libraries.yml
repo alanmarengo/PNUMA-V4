@@ -1,0 +1,16 @@
+prueba-script:
+  css:
+    layout:
+      templates/gridstack/dist/gridstack.css: {}
+      templates/gridstack/dist/gridstack-extra.css: {}
+      css/grid-style.css: {}
+      css/style.css: {}
+  js: 
+    templates/gridstack/dist/gridstack-h5.js: {}
+
+hub-script:
+  css:
+    layout:
+      css/hub.css: {}
+  js: 
+    js/hub.js: {}

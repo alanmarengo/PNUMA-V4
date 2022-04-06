@@ -1,0 +1,309 @@
+/* VARIABLES  */
+:root {
+    /* --hub-bg-main: rgba(116, 116, 116, 0.8); */
+    --hub-bg-main:#2695cd;
+    --hub-bg-main-hover: rgb(102, 102, 102);
+    --hub-bg-main-disabled: rgb(173, 173, 173);
+    --size-hub-element: 15px;
+  }
+.d-none{
+    display: none;
+}
+.hub{
+    position: absolute;
+    z-index:1000;
+    width: 35px;
+    height: 205px;
+    top:calc(50% - 102.5px);
+    right: 5px;
+    box-sizing: border-box; 
+    transition: all 0.3s;   
+    background-color: rgba(102, 102, 102, 0.3);
+    border-radius: 15px 15px 15px 15px;
+    transition: all 0.3s;
+    border:1px solid rgba(102, 102, 102, 0.1);
+    padding: 5px 0 5px 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hub:hover{
+    background-color: rgba(102, 102, 102, 0.6);
+}
+
+/* GENERAL */
+.itemBg{
+    background-color: var(--hub-bg-main);
+    transition: all 0.3s;
+}
+.itemBg:hover{
+    background-color: var(--hub-bg-main-hover);
+}
+.itemBgDisabled{
+    background-color: var(--hub-bg-main-disabled);
+    cursor: default !important;
+}
+.hubBtnSm{
+    width: 22px;
+    height: 22px;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+/*     position: absolute; */
+}
+
+
+/* DRAG */
+.dragHub{
+    cursor: move;
+
+    height: 60px;
+    width: 18px;
+    border-radius: 5px 5px 5px 5px;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dragHub img{
+    margin: 0;
+    width: 90%;
+}
+
+
+
+/* FULL SCREEN */
+
+
+/* MINIMIZE  and UNMMINIMIZE*/
+.moveMinimized{
+    display: none;
+}
+
+.content-minimize .unminimizeHub{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    z-index: 1;
+    border-radius: 0;
+    /* border-right:1px solid whitesmoke; */
+}
+
+.content-minimize{
+    transition: all 0s;
+    overflow: hidden !important;
+    border-radius: 35px;
+    margin-left: 5% !important;
+    width: 90% !important;
+    max-width: 100px !important;
+    height: 40px !important;
+    border:4px solid whitesmoke;
+    opacity: 0.5;
+}
+body.dark .content-minimize{
+    border: 4px solid #3d3d3d;
+}
+body.atic .content-minimize{
+    border: 4px solid #0b2d3d;
+}
+.content-minimize:hover{
+    opacity: 1;
+}
+.content-minimize .hub{
+   display:block !important;
+   width: 110%;
+   height: 110%;
+   top:-5%;
+   left:-5%;
+}
+.content-minimize .hub .dragHub{
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    border-radius: 0;
+    overflow: hidden;
+}
+.content-minimize .hub .dragHub::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    border-top:60px solid transparent;
+    border-left: 5px solid whitesmoke;
+}
+body.dark .content-minimize .hub .dragHub::after{
+    border-left: 5px solid #3d3d3d;
+}
+body.atic .content-minimize .hub .dragHub::after{
+    border-left: 5px solid #0b2d3d;
+}
+
+.content-minimize .hub .dragHub img{
+    display:none;
+}
+.content-minimize .hub .dragHub .moveMinimized{
+    display:block;
+    height: 80%;
+}
+.content-minimize .unminimizeHub::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    border-bottom:60px solid transparent;
+    border-right: 5px solid whitesmoke;
+}
+body.dark .content-minimize .unminimizeHub::after{
+    border-right: 5px solid #3d3d3d;
+}
+body.atic .content-minimize .unminimizeHub::after{
+    border-right: 5px solid #0b2d3d;
+}
+
+/* DELETE */
+.closeHub{
+/*     top: 10px;
+    right: calc(50% - 11px); */
+    background-color:#CD3D26;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+.closeHub:hover{
+    background-color:#9b2f1f;
+}
+/* LOCK */
+.lockHub{
+/*     top: 35px;
+    right: calc(50% - 11px); */
+    font-size: 0.85rem;
+    perspective: 700px;
+}
+#unlock{
+    background-color: #ef9547;
+}
+
+
+
+/* MODO PRESENTACION */
+.presentActive{
+    opacity: 0.05;
+}
+.presentActive:hover{
+    opacity: 1;
+}
+.noHub{
+    display:none !important;
+}
+
+
+/* POPUP FULL SCREEN */
+@keyframes append {
+    from{   opacity: 0.1;  }
+    to  {   opacity: 1; }
+}
+.baseFullScreen{
+    transition: all 0.5s;
+    position:fixed;
+    z-index: 1001;
+    top:0;
+    right:0;
+    background-color: rgba(41, 41, 41, 0.5);
+    width: 100%;
+    height: 100%;
+    animation-name: append;
+    animation-duration: 0.2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popupFS{
+    width: 90%;
+    height: 90%;
+    padding: 30px;
+    background-color: white;
+    color: rgb(75, 75, 75);
+    position: relative;
+}
+body.dark .popupFS{
+    background-color: #818181;
+}
+body.atic .popupFS{
+    background-color: #0d3344;
+}
+#closeFS{
+    border:transparent;
+    position: absolute;
+}
+.popupFS button{
+    bottom: 20px;
+    right: 40px;
+    border: transparent;
+    background-color: #479cc7;
+    height: 35px;
+    padding: 0px 2.5% 0px 2.5%;
+}
+.popupFS div{
+    top:20px;
+    right: 40px;
+}
+
+.divNumberDash{
+    box-sizing: border-box;
+	border:1px solid red;
+	position:absolute;
+	width: 100%;
+    height: 100%;
+}
+
+
+/* FLIP ELEMENT */
+
+
+@keyframes flipFront {
+    0%{     transform: perspective(2000px) rotateY(0deg);   }
+    100%{   transform: perspective(2000px) rotateY(-180deg);   }
+}
+@keyframes flipBack {
+    0%{     transform: perspective(2000px) rotateY(0deg);   }
+    100%{   transform: perspective(2000px) rotateY(180deg);   }
+}
+.frontRotate{
+    animation-name: flipFront;
+    animation-duration: 0.5s;
+    position: absolute;
+    z-index: 1000;
+}
+
+.backRotate{
+    animation-name: flipBack;
+    animation-duration: 0.5s;
+    position: absolute;
+    z-index: 1000;
+}
+.showElement{
+    transition: all 0.1s;
+    visibility: hidden;
+    visibility: visible;
+}
+.flipCardBTN{
+    max-height: 65%;
+}
