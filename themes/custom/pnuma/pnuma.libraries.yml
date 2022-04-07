@@ -3,6 +3,7 @@ global-styling:
     theme:
       css/styles.css: {}
       css/header.css: {}
+      css/footer.css: {}
       
 global-scripts:
   js:

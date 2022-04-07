@@ -7,6 +7,15 @@
     --font-color-active: #03AAF1;
 
     --font-roboto: 'Roboto', sans-serif;
+    --w-thin:100;
+    --w-elight:200;
+    --w-light:300;
+    --w-regular: 400;
+    --w-medium: 500;
+    --w-semibold: 600;
+    --w-bold: 600;
+
+    --mobile-size: 750px;
   }
 
 *{
