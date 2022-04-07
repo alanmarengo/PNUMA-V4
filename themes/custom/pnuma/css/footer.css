@@ -1,0 +1,98 @@
+.mainFooter{
+    width: 100%;
+    height: 440px;
+    background-color: #3B3B3B;
+    position: absolute;
+    top: 100vh;
+    left: 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+    /* CONTENEDORES */
+    .mainFooter .contextual-region{
+        margin-top: 75px;
+    }
+    .mainFooter .contextual-region#block-enlacesexternosv2{
+        margin-left: 130px;
+    }
+    .mainFooter .contextual-region#block-contacto{
+        text-align: center;
+    }
+    .mainFooter .contextual-region#block-politicas{
+        text-align: right;
+        margin-right: 130px;
+    }
+    @media (max-width: 1400px){
+        .mainFooter .contextual-region#block-enlacesexternosv2{
+            margin-left: 80px;
+        }
+        .mainFooter .contextual-region#block-politicas{
+            margin-right: 80px;
+        }
+    }
+    @media (max-width: 1000px){
+        .mainFooter .contextual-region#block-enlacesexternosv2{
+            margin-left: 20px;
+        }
+        .mainFooter .contextual-region#block-politicas{
+            margin-right: 20px;
+        }
+    }
+
+
+    /* TEXTOS */
+        .mainFooter .contextual-region h4{
+            font-weight: var(--w-bold);
+            color:white;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        .mainFooter .contextual-region p{
+            margin-bottom: 6px;
+        }
+        .mainFooter .contextual-region p a{
+            font-weight: var(--w-bold);
+            color:#CBCBCB;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .mainFooter .contextual-region p a:hover{
+            text-decoration: underline;
+        }
+        .mainFooter .contextual-region h5{
+            margin-bottom: 25px;
+        }
+            .mainFooter .contextual-region h5 a{
+                font-weight: var(--w-bold);
+                color:white;
+                font-size: 17px;
+                text-decoration: none;
+            }
+            .mainFooter .contextual-region h5 a:hover{
+                text-decoration: underline;
+            }
+
+
+    /* LOGO */
+    .mainFooter .contentFooter{
+        width: 90%;
+        max-width: 1400px;
+        height: 115px;
+        border-top: 1px solid #4F4F4F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        margin-bottom: 0;
+        color:#CBCBCB;
+        font-size: 15px;
+        font-weight: var(--w-bold);
+    }
+    .mainFooter .contentFooter div img{
+        max-height: 90%;
+        max-width: 90%;
+        margin-right: 30px;
+    }
+    
