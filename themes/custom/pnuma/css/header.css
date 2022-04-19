@@ -1,4 +1,5 @@
 .mainHeader{
+    overflow-x: hidden;
     width: 100%;
     height: 70px;
     border-bottom: 3px solid #03AAF1;
@@ -57,3 +58,41 @@
             width: 5%;
             height: 100%;
         }
+
+@media (max-width: 1200px){
+    /* LINKS */
+    .mainHeader nav .contentLinks ul{
+        margin-left: 0px;
+    }
+    .mainHeader nav .contentLinks ul li{
+        margin-left: 50px;
+    }
+}
+@media (max-width: 1000px){
+    /* LINKS */
+    .mainHeader nav .contentLinks ul li{
+        margin-left: 30px;
+    }
+    /* LOGO */
+    .mainHeader nav #block-pnuma-branding .logoIMG{
+        width: 150px;
+        margin-left: 10px;
+    }
+    .mainHeader nav #block-pnuma-branding .logoIMG img{
+        max-width: 100%;
+    }
+
+}
+@media (max-width: 850px){
+    /* LINKS */
+    .mainHeader nav .contentLinks ul li{
+        margin-left: 15px;
+    }
+}
+/* MOBILE */
+@media (max-width: 750px){
+    /* LINKS */
+    .mainHeader nav .contentLinks ul li{
+        margin-left: 15px;
+    }
+}

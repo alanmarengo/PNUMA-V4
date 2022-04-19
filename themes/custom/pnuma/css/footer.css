@@ -11,66 +11,107 @@
     flex-wrap: wrap;
 }
     /* CONTENEDORES */
-    .mainFooter .contextual-region{
+    .mainFooter .footerRegion{
         margin-top: 75px;
     }
-    .mainFooter .contextual-region#block-enlacesexternosv2{
+    .mainFooter .footerRegion#block-enlacesexternosv2{
         margin-left: 130px;
     }
-    .mainFooter .contextual-region#block-contacto{
+    .mainFooter .footerRegion#block-contacto{
         text-align: center;
     }
-    .mainFooter .contextual-region#block-politicas{
+    .mainFooter .footerRegion#block-politicas{
         text-align: right;
         margin-right: 130px;
     }
     @media (max-width: 1400px){
-        .mainFooter .contextual-region#block-enlacesexternosv2{
+        .mainFooter .footerRegion#block-enlacesexternosv2{
             margin-left: 80px;
         }
-        .mainFooter .contextual-region#block-politicas{
+        .mainFooter .footerRegion#block-politicas{
             margin-right: 80px;
         }
     }
     @media (max-width: 1000px){
-        .mainFooter .contextual-region#block-enlacesexternosv2{
+        .mainFooter .footerRegion#block-enlacesexternosv2{
             margin-left: 20px;
         }
-        .mainFooter .contextual-region#block-politicas{
+        .mainFooter .footerRegion#block-politicas{
             margin-right: 20px;
         }
     }
-
+    @media (max-width: 750px){
+        .mainFooter{
+            height: auto;
+        }
+        .mainFooter .footerRegion#block-contacto{
+            text-align: right;
+            margin-right: 10px;
+        }
+        .mainFooter .footerRegion#block-politicas{
+            width: 100%;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .mainFooter .footerRegion#block-politicas div{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .mainFooter .footerRegion#block-enlacesexternosv2{
+            margin-left: 10px;
+        }
+    }
+    @media (max-width: 450px){
+        .mainFooter .footerRegion#block-contacto{
+            width: 95%;
+            text-align: center;
+            margin:25px auto;
+        }
+        .mainFooter .footerRegion#block-politicas{
+            width: 95%;
+            text-align: center;
+            margin:25px auto;
+        }
+        .mainFooter .footerRegion#block-politicas h5{
+            width: 100%;
+        }
+        .mainFooter .footerRegion#block-enlacesexternosv2{
+            width: 95%;
+            text-align: center;
+            margin:25px auto;
+        }
+    }
 
     /* TEXTOS */
-        .mainFooter .contextual-region h4{
+        .mainFooter .footerRegion h4{
             font-weight: var(--w-bold);
             color:white;
             font-size: 22px;
             margin-bottom: 15px;
         }
-        .mainFooter .contextual-region p{
+        .mainFooter .footerRegion p{
             margin-bottom: 6px;
         }
-        .mainFooter .contextual-region p a{
+        .mainFooter .footerRegion p a{
             font-weight: var(--w-bold);
             color:#CBCBCB;
             font-size: 18px;
             text-decoration: none;
         }
-        .mainFooter .contextual-region p a:hover{
+        .mainFooter .footerRegion p a:hover{
             text-decoration: underline;
         }
-        .mainFooter .contextual-region h5{
+        .mainFooter .footerRegion h5{
             margin-bottom: 25px;
         }
-            .mainFooter .contextual-region h5 a{
+            .mainFooter .footerRegion h5 a{
                 font-weight: var(--w-bold);
                 color:white;
                 font-size: 17px;
                 text-decoration: none;
             }
-            .mainFooter .contextual-region h5 a:hover{
+            .mainFooter .footerRegion h5 a:hover{
                 text-decoration: underline;
             }
 
